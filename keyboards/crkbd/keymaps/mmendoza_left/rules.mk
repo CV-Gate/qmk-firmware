@@ -1,0 +1,58 @@
+VIA_ENABLE          = yes
+VIAL_ENABLE         = yes
+LTO_ENABLE          = yes
+
+RGBLIGHT_ENABLE     = no
+RGB_MATRIX_ENABLE   = yes # Can't have RGBLIGHT and RGB_MATRIX at the same time.
+MOUSEKEY_ENABLE     = no
+OLED_ENABLE         = yes
+OLED_DRIVER         = ssd1306
+EXTRAKEY_ENABLE     = no
+COMBO_ENABLE        = no
+QMK_SETTINGS        = no
+
+RGB_MATRIX_KEYPRESSES = yes  // Enables keypress effects
+RGB_MATRIX_KEYRELEASES = yes // Enables keyrelease effects
+RGB_MATRIX_FRAMEBUFFER_EFFECTS = yes // Enables framebuffer effects
+RGB_MATRIX_LED_PROCESS_LIMIT = 10 // Limits the number of LEDs processed in a cycle
+RGB_MATRIX_LED_FLUSH_LIMIT = 26 // Limits in ms how quickly an LED can be flushed
+RGB_MATRIX_MAXIMUM_BRIGHTNESS = 120 // Limits maximum brightness
+RGB_MATRIX_HUE_STEP = 10
+RGB_MATRIX_SAT_STEP = 17
+RGB_MATRIX_VAL_STEP = 17
+RGB_MATRIX_SPD_STEP = 10
+
+
+EXTRAFLAGS = -flto -mcall-prologues
+SPACE_CADET_ENABLE = no
+GRAVE_ESC_ENABLE = no
+NO_USB_STARTUP_CHECK = yes
+
+##===================
+#To save further bytes (doesn't seem to do anything at all)
+DYNAMIC_MACRO_ENABLE = no
+KEY_LOCK_ENABLE = no
+VELOCIKEY_ENABLE = no
+TERMINAL_ENABLE = no
+AUTO_SHIFT_ENABLE = no
+POINTING_DEVICE_ENABLE = no
+RAW_ENABLE = no
+SEQUENCER_ENABLE = no
+WPM_ENABLE = yes
+AUTO_SHIFT_MODIFIERS = no
+VIA_ENABLE = no
+SLEEP_LED_ENABLE = no
+DYNAMIC_KEYMAP_ENABLE = no
+DYNAMIC_KEYMAP_MACRO_ENABLE = no
+DYNAMIC_KEYMAP_CUSTOM_FN_ENABLE = no
+DYNAMIC_KEYMAP_LAYER_COUNT = no
+LED_MATRIX_CUSTOM_KB = no
+RGB_MATRIX_CUSTOM_KB = no
+ENCODER_ENABLE = no
+LEADER_ENABLE = no
+ENCODER_MAP_ENABLE = no
+KEYLOGGER_ENABLE = no
+UNICODEMAP_ENABLE = no
+VARIABLE_TRACE = no
+FAUXCLICKY_ENABLE = no
+HD44780_ENABLE = no
