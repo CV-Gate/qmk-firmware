@@ -7,7 +7,7 @@ RGB_MATRIX_ENABLE   = yes # Can't have RGBLIGHT and RGB_MATRIX at the same time.
 MOUSEKEY_ENABLE     = no
 OLED_ENABLE         = yes
 OLED_DRIVER         = ssd1306
-EXTRAKEY_ENABLE     = no
+EXTRAKEY_ENABLE     = yes
 COMBO_ENABLE        = no
 QMK_SETTINGS        = no
 
